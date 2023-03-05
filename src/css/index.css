@@ -108,9 +108,11 @@ button.tel {
     top: 85%;
     right: 15px;
     display: none;
+    flex-direction: column;
     background-color: #FFFFFF;
     box-shadow: 0 17px 40px -2px rgb(28 39 49 / 10%);
     border-radius: 5px;
+    z-index: 1;
 }
 
 button.tel.opened .icon--chevron {
@@ -119,7 +121,6 @@ button.tel.opened .icon--chevron {
 
 button.tel.opened ~ .contacts-dropdown {
     display: flex;
-    flex-direction: column;
 }
 
 .contacts-dropdown a {
@@ -157,6 +158,10 @@ button.tel.opened ~ .contacts-dropdown {
 }
 
 button.catalogy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
     width: 170px;
     height: 50px;
     font-weight: 700;
@@ -165,6 +170,19 @@ button.catalogy {
     color: #FFFFFF;
     background-color: #54C144;
     border-radius: 5px;
+}
+
+button.catalogy > .icon--xmark,
+button.catalogy.opened > .icon--grid {
+    display: none;
+}
+
+button.catalogy.opened {
+    background-color: #ECAC28;
+}
+
+button.catalogy.opened .icon--xmark {
+    display: inline;
 }
 
 .h-links {
@@ -268,4 +286,16 @@ button.catalogy {
     width: 24px;
     height: 24px;
     background-image: url("../assets/icons/magnifier.svg");
+}
+
+.icon--grid {
+    width: 27px;
+    height: 27px;
+    background-image: url("../assets/icons/grid.svg");
+}
+
+.icon--xmark {
+    width: 27px;
+    height: 27px;
+    background-image: url("../assets/icons/xmark.svg");
 }
