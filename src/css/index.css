@@ -10,7 +10,7 @@ body {
     font-size: 14px;
     line-height: 120%;
     /*remove*/
-    /*height: 200vh;*/
+    height: 200vh;
 }
 
 a {
@@ -39,7 +39,13 @@ ul {
     display: none;
 }
 
-header {
+.inner {
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+#header {
     position: sticky;
     top: 0;
     left: 0;
@@ -48,26 +54,21 @@ header {
     box-shadow: 0 17px 33px -2px rgba(28, 39, 49, 0.05);
 }
 
-.inner {
-    max-width: 1210px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-header .inner {
+#header .inner {
     display: flex;
     justify-content: space-between;
 }
 
-ul {
+/* NAVIGATION (DESKTOP) */
+.navigation-list {
     display: flex;
 }
 
-ul > li {
+.navigation-list > .navigation-item {
     display: inline-flex;
 }
 
-ul > li > a {
+.navigation-item > a {
     padding: 15px 10px;
     font-size: 14px;
     line-height: 120%;
@@ -75,25 +76,23 @@ ul > li > a {
     transition: background-color 0.2s;
 }
 
-ul > li > a:hover {
+.navigation-item > a:hover {
     background-color: #F4F4F4;
-    text-decoration: underline;
 }
 
-/* CONTACTS */
-.contacts {
+.contact-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 38%;
 }
 
-.contacts > .inner {
+/* CONTACTS (PHONE NUMBERS) */
+.contacts {
     position: relative;
-    margin: 0;
 }
 
-button.tel {
+.contacts > button.tel {
     padding: 15px 0;
     display: inline-flex;
     justify-content: center;
@@ -106,7 +105,7 @@ button.tel {
 .contacts-dropdown {
     position: absolute;
     top: 85%;
-    right: 15px;
+    right: 0;
     display: none;
     flex-direction: column;
     background-color: #FFFFFF;
@@ -137,6 +136,7 @@ button.tel.opened ~ .contacts-dropdown {
     padding-top: 5px;
 }
 
+/* SCHEDULE */
 .schedule {
     display: inline-flex;
     align-items: center;
@@ -146,10 +146,11 @@ button.tel.opened ~ .contacts-dropdown {
     border-radius: 5px;
 }
 
-.h-mid {
+.header-middle {
     padding-bottom: 25px;
 }
 
+/*LOGO*/
 .logo {
     display: flex;
     align-items: center;
@@ -157,7 +158,8 @@ button.tel.opened ~ .contacts-dropdown {
     padding: 0 10px;
 }
 
-button.catalogy {
+/* CATALOG */
+.catalog-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,52 +174,60 @@ button.catalogy {
     border-radius: 5px;
 }
 
-button.catalogy > .icon--xmark,
-button.catalogy.opened > .icon--grid {
+.catalog-btn > .icon--xmark,
+.catalog.opened .catalog-btn > .icon--grid {
     display: none;
 }
 
-button.catalogy.opened {
+.catalog.opened .catalog-btn {
     background-color: #ECAC28;
 }
 
-button.catalogy.opened .icon--xmark {
+.catalog.opened .catalog-btn .icon--xmark {
     display: inline;
 }
 
-.h-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.h-links > a {
-    padding: 0 10px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    color: #323232;
-}
-
-.h-search {
+/*SEARCH*/
+.search {
     position: relative;
+    padding: 0 15px;
+    flex: 1 1 45%;
+    max-width: 600px;
 }
 
-.h-search button[type="submit"] {
+.search button[type="submit"] {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 15px;
     padding: 5px 15px;
     height: 100%;
     background-color: transparent;
 }
 
-.txt_search {
+.search-input {
     padding: 10px 15px 10px 50px;
-    width: 558px;
+    width: 100%;
     height: 50px;
     border: 2px solid #54C144;
     border-radius: 5px;
+    font-size: 17px;
+    line-height: 22px;
+    color: #D0D6DE;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 20%;
+}
+
+.panel > a {
+    padding: 0 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: #323232;
 }
 
 /* ICONS */

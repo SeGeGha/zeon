@@ -14,39 +14,38 @@
 </head>
 <body>
     <header id="header">
-        <div class="h-top">
+        <div class="header-top">
             <div class="inner">
-                <nav>
-                    <ul>
-                        <li>
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-item">
                             <a href="/sale">Акция</a>
                         </li>
-                        <li>
+                        <li class="navigation-item">
                             <a href="/news">Новости</a>
                         </li>
-                        <li>
+                        <li class="navigation-item">
                             <a href="/installment">Рассрочка</a>
                         </li>
-                        <li>
+                        <li class="navigation-item">
                             <a href="/help">Как купить</a>
                         </li>
-                        <li>
+                        <li class="navigation-item">
                             <a href="/delivery">Доставка</a>
                         </li>
-                        <li>
+                        <li class="navigation-item">
                             <a href="/contacts">Контакты</a>
                         </li>
-                        <li>
+                        <li class="navigation-item">
                             <a href="/Club_card">Клубная Карта</a>
                         </li>
-                        <li>
+                        <li class="navigation-item">
                             <a href="/service">Услуги</a>
                         </li>
                     </ul>
                 </nav>
-
-                <div class="contacts">
-                    <div class="inner">
+                <div class="contact-info">
+                    <div class="contacts">
                         <button class="tel">
                             <i class="icon icon--velcom"></i>
                             +375 (44) 7-300-500
@@ -84,18 +83,16 @@
                         </div>
                     </div>
 
-                    <div class="inner">
-                        <span class="schedule">
-                            <i class="icon icon--clock"></i>
-                            Пн-сб: 10 - 19, Вс: 10 - 17
-                        </span>
+                    <div class="schedule">
+                        <i class="icon icon--clock"></i>
+                        Пн-сб: 10 - 19, Вс: 10 - 17
                     </div>
                 </div>
             </div>
         </div>
-        <div class="h-mid">
+        <div class="header-middle">
             <div class="inner">
-                <div class="logo h-logo">
+                <div class="logo">
                     <!-- if current route === '/' -->
                     <img src="src/assets/logos/zeon-logo.svg" alt="zeon online hypermarket">
 
@@ -104,58 +101,45 @@
                         <img src="src/assets/logos/zeon-logo.svg" alt="zeon online hypermarket">
                     </a>
                 </div>
-
-                <div>
-                    <button class="catalogy">
+                <div class="catalog">
+                    <button class="catalog-btn">
                         <i class="icon icon--grid"></i>
                         <i class="icon icon--xmark"></i>
                         Каталог
                     </button>
+
+                    <!-- CATALOG HTML-->
                 </div>
-
-                <div class="h-search">
-                    <div class="search-result">
-                        <ul></ul>
-                    </div>
-
+                <div class="search">
                     <form action="/search/">
                         <label>
-                            <input name="q" type="text" value="" placeholder="Поиск по сайту" class="txt_search" autocomplete="off">
+                            <input name="q" type="text" value="" placeholder="Поиск по сайту" class="search-input" autocomplete="off">
                         </label>
 
                         <button type="submit">
                             <i class="icon icon--magnifier"></i>
                         </button>
                     </form>
+                    <div class="search-result">
+                        <ul></ul>
+                    </div>
                 </div>
 
-                <div class="h-links">
-                    <a href="/compare.php?id=" class="h-compare compareAlt" target="_blank">
+                <div class="panel">
+                    <a href="/compare.php?id=" class="panel-compare" target="_blank">
                         <i class="icon icon--scales"></i>
                         <span>Сравнение</span>
                     </a>
 
-                    <a href="/cart.php?id=" class="h-cart" onclick="yaCounter21748810.reachGoal('go_to_basket'); return true;">
+                    <a href="/cart.php?id=" class="panel-cart">
                         <i class="icon icon--basket"></i>
                         <span>Корзина</span>
                     </a>
 
-                    <a href="#dialog_login">
+                    <a href="#dialog_login" class="panel-login">
                         <i class="icon icon--login"></i>
                         <span>Войти</span>
                     </a>
-
-                    <div hidden>
-                        <a href="/compare.php?id=" class="h-compare compareAlt" target="_blank">В сравнении <span class="h-cart-goods1">0</span>
-                        </a>
-
-                        <a href="/cart.php?id=" class="h-cart" onclick="yaCounter21748810.reachGoal('go_to_basket'); return true;">
-                            <i class="h-cart-icon"></i>
-                            <span class="h-cart-txt">Корзина</span>
-                            <span class="h-cart-goods" id="basketCnt">0</span>
-                        </a>
-                        <span class="search-btn" id="search-btn"></span>
-                    </div>
                 </div>
             </div>
         </div>

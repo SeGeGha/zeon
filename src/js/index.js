@@ -4,8 +4,10 @@ contactsBtn.addEventListener('click', (event) => {
     event.currentTarget.classList.toggle('opened')
 });
 
-const catalogyBtn = document.querySelector('button.catalogy');
+const catalogBtn = document.querySelector('.catalog-btn');
 
-catalogyBtn.addEventListener('click', (event) => {
-    event.currentTarget.classList.toggle('opened')
+catalogBtn.addEventListener('click', (event) => {
+    const catalogWrap = event.target.closest('.catalog');
+
+    catalogWrap.classList.toggle('opened');
 })
