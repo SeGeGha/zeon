@@ -14,7 +14,7 @@
 </head>
 <body>
     <header id="header">
-        <div class="header-top">
+        <div class="header-top hidden-xs hidden-sm">
             <div class="inner">
                 <nav class="navigation">
                     <ul class="navigation-list">
@@ -95,19 +95,17 @@
                 <div class="logo">
                     <!-- if current route === '/' -->
                     <img src="src/assets/logos/zeon-logo.svg" alt="zeon online hypermarket">
-
                     <!-- if current route !== '/' -->
                     <a href="/" hidden>
                         <img src="src/assets/logos/zeon-logo.svg" alt="zeon online hypermarket">
                     </a>
                 </div>
-                <div class="catalog">
+                <div class="catalog hidden-xs hidden-sm">
                     <button class="catalog-btn">
                         <i class="icon icon--grid"></i>
                         <i class="icon icon--xmark"></i>
                         Каталог
                     </button>
-
                     <!-- CATALOG HTML-->
                 </div>
                 <div class="search">
@@ -115,7 +113,6 @@
                         <label>
                             <input name="q" type="text" value="" placeholder="Поиск по сайту" class="search-input" autocomplete="off">
                         </label>
-
                         <button type="submit">
                             <i class="icon icon--magnifier"></i>
                         </button>
@@ -124,22 +121,58 @@
                         <ul></ul>
                     </div>
                 </div>
-
                 <div class="panel">
+                    <div class="contacts hidden-md hidden-lg">
+                        <button class="tel">
+                            <i class="icon icon--phone-bold"></i>
+                        </button>
+                        <div class="contacts-dropdown">
+                            <span class="tel">
+                                <a href="tel:+375447300500">
+                                    <i class="icon icon--velcom"></i>
+                                    +375 (44) 7-300-500
+                                </a>
+                            </span>
+
+                            <span class="tel">
+                                <a href="tel:+375255300500">
+                                    <i class="icon icon--life"></i>
+                                    +375 (25) 5-300-500
+                                </a>
+                            </span>
+
+                            <span class="tel">
+                                <a href="tel:+375257300500">
+                                    <i class="icon icon--mts"></i>
+                                    +375 (25) 7-300-500
+                                </a>
+                            </span>
+
+                            <span class="tel">
+                                <a href="tel:+375232300500">
+                                    <i class="icon icon--phone"></i>
+                                    +375 (232) 300-500
+                                </a>
+                            </span>
+                        </div>
+                    </div>
                     <a href="/compare.php?id=" class="panel-compare" target="_blank">
                         <i class="icon icon--scales"></i>
-                        <span>Сравнение</span>
+                        <span class="hidden-xs hidden-sm">Сравнение</span>
                     </a>
-
                     <a href="/cart.php?id=" class="panel-cart">
                         <i class="icon icon--basket"></i>
-                        <span>Корзина</span>
+                        <span class="hidden-xs hidden-sm">Корзина</span>
                     </a>
-
                     <a href="#dialog_login" class="panel-login">
                         <i class="icon icon--login"></i>
-                        <span>Войти</span>
+                        <span class="hidden-xs hidden-sm">Войти</span>
                     </a>
+                    <div class="burger-menu hidden-md hidden-lg">
+                        <button class="menu-btn">
+                            <i class="icon icon--menu"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

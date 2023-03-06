@@ -21,6 +21,7 @@ a {
 button {
     padding: 5px 10px;
     border: none;
+    background-color: transparent;
 }
 
 a,
@@ -39,6 +40,30 @@ ul {
     display: none;
 }
 
+@media screen and (max-width: 767px) {
+    .hidden-xs {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hidden-lg {
+        display: none;
+    }
+}
+
 .inner {
     max-width: 1210px;
     padding: 0 15px;
@@ -46,17 +71,39 @@ ul {
 }
 
 #header {
-    position: sticky;
-    top: 0;
-    left: 0;
     width: 100%;
     background-color: #FFFFFF;
     box-shadow: 0 17px 33px -2px rgba(28, 39, 49, 0.05);
 }
 
+#header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#header.fixed .header-top {
+    display: none;
+}
+
+#header.fixed .header-middle {
+    padding: 10px 0;
+}
+
 #header .inner {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1199px) {
+    .header-top .inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-top .navigation {
+        order: 2;
+    }
 }
 
 /* NAVIGATION (DESKTOP) */
@@ -84,7 +131,8 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 38%;
+    width: 40%;
+    min-width: 400px;
 }
 
 /* CONTACTS (PHONE NUMBERS) */
@@ -108,17 +156,18 @@ ul {
     right: 0;
     display: none;
     flex-direction: column;
+    min-width: 175px;
     background-color: #FFFFFF;
     box-shadow: 0 17px 40px -2px rgb(28 39 49 / 10%);
     border-radius: 5px;
     z-index: 1;
 }
 
-button.tel.opened .icon--chevron {
+.contacts.opened .icon--chevron {
     transform: rotate(180deg);
 }
 
-button.tel.opened ~ .contacts-dropdown {
+.contacts.opened > .contacts-dropdown {
     display: flex;
 }
 
@@ -136,6 +185,13 @@ button.tel.opened ~ .contacts-dropdown {
     padding-top: 5px;
 }
 
+@media screen and (max-width: 991px) {
+    .contacts > button.tel,
+    .burger-menu .menu-btn {
+        padding: 0 10px;
+    }
+}
+
 /* SCHEDULE */
 .schedule {
     display: inline-flex;
@@ -148,6 +204,12 @@ button.tel.opened ~ .contacts-dropdown {
 
 .header-middle {
     padding-bottom: 25px;
+}
+
+@media screen and (max-width: 991px) {
+    .header-middle {
+        padding: 10px 0;
+    }
 }
 
 /*LOGO*/
@@ -244,6 +306,12 @@ button.tel.opened ~ .contacts-dropdown {
     background-image: url("../assets/icons/call-outline.svg");
 }
 
+.icon--phone-bold {
+    width: 28px;
+    height: 28px;
+    background-image: url("../assets/icons/call-bold.svg");
+}
+
 .icon--velcom {
     width: 17px;
     height: 17px;
@@ -308,4 +376,10 @@ button.tel.opened ~ .contacts-dropdown {
     width: 27px;
     height: 27px;
     background-image: url("../assets/icons/xmark.svg");
+}
+
+.icon--menu {
+    width: 28px;
+    height: 28px;
+    background-image: url("../assets/icons/menu.svg");
 }
