@@ -206,18 +206,19 @@ ul {
     padding-bottom: 25px;
 }
 
-@media screen and (max-width: 991px) {
-    .header-middle {
-        padding: 10px 0;
-    }
-}
-
 /*LOGO*/
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .logo img {
+        width: 90px;
+        height: 30px;
+    }
 }
 
 /* CATALOG */
@@ -251,10 +252,16 @@ ul {
 
 /*SEARCH*/
 .search {
+    padding: 0 10px;
     position: relative;
-    padding: 0 15px;
-    flex: 1 1 45%;
-    max-width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+    .search {
+        padding: 0 15px;
+        flex: 1 1 45%;
+        max-width: 600px;
+    }
 }
 
 .search button[type="submit"] {
@@ -290,6 +297,31 @@ ul {
     flex-direction: column;
     align-items: center;
     color: #323232;
+}
+
+@media screen and (max-width: 767px) {
+    .header-middle .inner {
+        margin: 0 -10px;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .search {
+        order: 3;
+        width: 100%;
+    }
+
+    .panel > a,
+    .contacts > button.tel,
+    .burger-menu .menu-btn {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header-middle {
+        padding: 10px 0;
+    }
 }
 
 /* ICONS */
