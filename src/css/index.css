@@ -36,31 +36,35 @@ ul {
     list-style: none;
 }
 
+.locked {
+    overflow: hidden;
+}
+
 .hidden {
-    display: none;
+    display: none!important;
 }
 
 @media screen and (max-width: 767px) {
     .hidden-xs {
-        display: none;
+        display: none!important;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .hidden-sm {
-        display: none;
+        display: none!important;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .hidden-md {
-        display: none;
+        display: none!important;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .hidden-lg {
-        display: none;
+        display: none!important;
     }
 }
 
@@ -68,6 +72,12 @@ ul {
     max-width: 1210px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+    .inner {
+        padding: 0 5px;
+    }
 }
 
 #header {
@@ -185,13 +195,6 @@ ul {
     padding-top: 5px;
 }
 
-@media screen and (max-width: 991px) {
-    .contacts > button.tel,
-    .burger-menu .menu-btn {
-        padding: 0 10px;
-    }
-}
-
 /* SCHEDULE */
 .schedule {
     display: inline-flex;
@@ -299,9 +302,17 @@ ul {
     color: #323232;
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    display: inline-flex;
+}
+
 @media screen and (max-width: 767px) {
     .header-middle .inner {
-        margin: 0 -10px;
         flex-wrap: wrap;
         row-gap: 15px;
     }
@@ -313,7 +324,7 @@ ul {
 
     .panel > a,
     .contacts > button.tel,
-    .burger-menu .menu-btn {
+    .menu .menu-btn {
         padding: 0 5px;
     }
 }
@@ -321,6 +332,11 @@ ul {
 @media screen and (max-width: 991px) {
     .header-middle {
         padding: 10px 0;
+    }
+
+    .contacts > button.tel,
+    .menu .menu-btn {
+        padding: 0 10px;
     }
 }
 
