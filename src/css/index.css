@@ -319,7 +319,7 @@ ul {
 }
 
 /* MOBILE MENU */
-.menu {
+#menu {
     display: flex;
     align-items: center;
 }
@@ -329,30 +329,32 @@ ul {
 }
 
 .menu-main {
+    visibility: hidden;
     position: fixed;
     top: 0;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
+    right: -100%;
     padding: 20px 20px 15px;
     min-width: 320px;
     height: 100vh;
     background-color: #282828;
+    transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
 }
 
-.menu.opened .menu-main {
-    display: flex;
+#menu.opened .menu-main {
+    visibility: visible;
+    right: 0;
+    transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
 }
 
-.menu .close-btn {
+#menu .close-btn {
     position: relative;
     right: -10px;
-    align-self: flex-end;
+    display: flex;
+    margin-left: auto;
 }
 
 .menu-body {
+    padding: 20px 0 15px;
     width: 100%;
     overflow-y: auto;
 }
@@ -364,6 +366,27 @@ ul {
 .menu-body .catalog-btn {
     width: 100%;
     border-radius: 0;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.menu-body .icon--grid {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-body .navigation {
+    padding: 10px 0;
+}
+
+.menu-body .navigation-item > a {
+    width: 100%;
+    padding-left: 0;
+}
+
+.menu-body .navigation-item > a:hover {
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
@@ -379,7 +402,7 @@ ul {
 
     .panel > a,
     .contacts > button.tel,
-    .menu .menu-btn {
+    #menu .menu-btn {
         padding: 0 5px;
     }
 }
@@ -390,7 +413,7 @@ ul {
     }
 
     .contacts > button.tel,
-    .menu .menu-btn {
+    #menu .menu-btn {
         padding: 0 10px;
     }
 }

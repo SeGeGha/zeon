@@ -23,7 +23,7 @@ window.addEventListener('scroll', (event) => {
 const menuBtn = document.querySelector('.menu-btn');
 
 menuBtn.addEventListener('click', (event) => {
-   const menuWrap = event.target.closest('.menu');
+   const menuWrap = event.target.closest('#menu');
 
    document.body.classList.add('locked');
    menuWrap.classList.toggle('opened');
