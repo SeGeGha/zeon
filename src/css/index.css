@@ -137,6 +137,22 @@ ul {
     background-color: #F4F4F4;
 }
 
+@media screen and (max-width: 991px) {
+    .navigation {
+        width: 100%;
+    }
+
+    .navigation-list {
+        flex-direction: column;
+    }
+
+    .navigation-item > a {
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+}
+
 .contact-info {
     display: flex;
     justify-content: space-between;
@@ -302,6 +318,7 @@ ul {
     color: #323232;
 }
 
+/* MOBILE MENU */
 .menu {
     display: flex;
     align-items: center;
@@ -309,6 +326,44 @@ ul {
 
 .menu-btn {
     display: inline-flex;
+}
+
+.menu-main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px 20px 15px;
+    min-width: 320px;
+    height: 100vh;
+    background-color: #282828;
+}
+
+.menu.opened .menu-main {
+    display: flex;
+}
+
+.menu .close-btn {
+    position: relative;
+    right: -10px;
+    align-self: flex-end;
+}
+
+.menu-body {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.menu-body .catalog {
+    width: 100%;
+}
+
+.menu-body .catalog-btn {
+    width: 100%;
+    border-radius: 0;
 }
 
 @media screen and (max-width: 767px) {
