@@ -86,6 +86,26 @@ ul {
     box-shadow: 0 17px 33px -2px rgba(28, 39, 49, 0.05);
 }
 
+.counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    font-style: normal;
+    background-color: #54C144;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.counter[data-count="0"] {
+    display: none;
+}
+
 #header.fixed {
     position: fixed;
     top: 0;
@@ -418,8 +438,14 @@ ul {
     }
 }
 
+#header .icon > .counter {
+    top: -4px;
+    right: -4px;
+}
+
 /* ICONS */
 .icon {
+    position: relative;
     display: inline-flex;
     background-position: center;
     background-repeat: no-repeat;
