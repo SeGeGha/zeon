@@ -182,6 +182,7 @@ ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    column-gap: 8px;
     height: 50px;
     border: 1px solid #E9E9E9;
     border-radius: 2px;

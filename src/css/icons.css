@@ -60,10 +60,22 @@
     background-image: url("../assets/icons/scales.svg");
 }
 
-.icon-login {
+.icon-sign-in {
     width: 28px;
     height: 28px;
     background-image: url("../assets/icons/person-outline.svg");
+}
+
+.icon-sign-in--bold {
+    width: 28px;
+    height: 28px;
+    background-image: url("../assets/icons/person-bold.svg");
+}
+
+.icon-sign-up {
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/icons/pencil.svg");
 }
 
 .icon-magnifier {
