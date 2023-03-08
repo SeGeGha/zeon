@@ -22,7 +22,8 @@ button.tel > .icon-caret--bold {
 }
 
 .contacts.opened .icon-chevron,
-.contacts.opened .icon-caret {
+.contacts.opened .icon-caret,
+.contacts.opened .icon-caret--bold {
     transform: rotate(180deg);
 }
 
