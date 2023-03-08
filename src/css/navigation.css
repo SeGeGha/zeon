@@ -19,8 +19,18 @@
     transition: background-color 0.2s;
 }
 
+.navigation-item > a[href="/sale"] {
+    color: #fff;
+}
+
+.navigation-item > a[href="/sale"] span {
+    padding: 5px 10px;
+    background-color: #FF0000;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
 .navigation-item > a:hover {
-    background-color: #F4F4F4;
     text-decoration: underline;
 }
 
@@ -40,10 +50,15 @@
     .navigation-item > a {
         width: 100%;
     }
+
+    .navigation-item > a[href="/sale"] span {
+        position: relative;
+        left: -10px;
+    }
 }
 
 @media screen and (min-width: 992px) {
-    .navigation-item > a:hover {
+    .navigation-item > a:not([href="/sale"]):hover {
         background-color: #F4F4F4;
     }
 }
