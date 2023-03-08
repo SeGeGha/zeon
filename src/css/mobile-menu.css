@@ -1,9 +1,15 @@
 #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .menu-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
 }
 
@@ -16,16 +22,22 @@
     min-width: 320px;
     height: 100vh;
     background-color: #282828;
+    -webkit-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
+    -o-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
     transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
 }
 
 #menu.opened .menu-main {
     visibility: visible;
     right: 0;
+    -webkit-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
+    -o-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
     transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
 }
 
 #menu .close-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
 }

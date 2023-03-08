@@ -12,6 +12,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -81,6 +82,7 @@ ul {
 #header {
     width: 100%;
     background-color: #FFFFFF;
+    -webkit-box-shadow: 0 17px 33px -2px rgba(28, 39, 49, 0.05);
     box-shadow: 0 17px 33px -2px rgba(28, 39, 49, 0.05);
 }
 
@@ -99,7 +101,11 @@ ul {
 }
 
 #header .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 15px;
     margin: 0 auto;
@@ -117,11 +123,14 @@ ul {
 
 @media screen and (max-width: 767px) {
     .header-middle .inner {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         row-gap: 15px;
     }
 
     .search {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
         order: 3;
     }
 }
@@ -138,18 +147,31 @@ ul {
 
 @media screen and (max-width: 1199px) {
     .header-top .inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
     .header-top .navigation {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
     }
 }
 
 .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 40%;
     min-width: 400px;
@@ -168,9 +190,18 @@ ul {
 }
 /* AUTH */
 .menu-body .auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 5px;
     color: #FFFFFF;
@@ -178,9 +209,17 @@ ul {
 }
 
 .menu-body .auth a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
     column-gap: 8px;
     height: 50px;
     border: 1px solid #E9E9E9;
