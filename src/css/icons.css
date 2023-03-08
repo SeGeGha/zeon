@@ -12,10 +12,10 @@
     background-image: url("../assets/icons/call-outline.svg");
 }
 
-.icon-phone-bold {
+.icon-phone--bold {
     width: 28px;
     height: 28px;
-    background-image: url("../assets/icons/call-bold.svg");
+    background-image: url("../assets/icons/call.svg");
 }
 
 .icon-velcom {
@@ -42,10 +42,16 @@
     background-image: url("../assets/icons/chevron-down.svg");
 }
 
+.icon-caret--bold {
+    width: 17px;
+    height: 17px;
+    background-image: url("../assets/icons/caret.svg");
+}
+
 .icon-clock {
     width: 17px;
     height: 17px;
-    background-image: url("../assets/icons/time-outline.svg");
+    background-image: url("../assets/icons/time.svg");
 }
 
 .icon-basket {
@@ -69,7 +75,7 @@
 .icon-sign-in--bold {
     width: 28px;
     height: 28px;
-    background-image: url("../assets/icons/person-bold.svg");
+    background-image: url("../assets/icons/person.svg");
 }
 
 .icon-sign-up {
