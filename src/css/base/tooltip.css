@@ -1,0 +1,16 @@
+.tooltip {
+    position: absolute;
+    top: 85%;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    min-width: 175px;
+    background-color: #FFFFFF;
+    box-shadow: 0 17px 40px -2px rgb(28 39 49 / 10%);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.opened > .tooltip {
+    display: flex;
+}

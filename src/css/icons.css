@@ -1,0 +1,91 @@
+.icon {
+    position: relative;
+    display: inline-flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.2s;
+}
+
+.icon-phone {
+    width: 17px;
+    height: 17px;
+    background-image: url("../assets/icons/call-outline.svg");
+}
+
+.icon-phone-bold {
+    width: 28px;
+    height: 28px;
+    background-image: url("../assets/icons/call-bold.svg");
+}
+
+.icon-velcom {
+    width: 17px;
+    height: 17px;
+    background-image: url("../assets/icons/A1.svg");
+}
+
+.icon-mts {
+    width: 17px;
+    height: 17px;
+    background-image: url("../assets/icons/mts.svg");
+}
+
+.icon-life {
+    width: 17px;
+    height: 17px;
+    background-image: url("../assets/icons/life.svg");
+}
+
+.icon-chevron {
+    width: 17px;
+    height: 17px;
+    background-image: url("../assets/icons/chevron-down.svg");
+}
+
+.icon-clock {
+    width: 17px;
+    height: 17px;
+    background-image: url("../assets/icons/time-outline.svg");
+}
+
+.icon-basket {
+    width: 25px;
+    height: 28px;
+    background-image: url("../assets/icons/basket.svg");
+}
+
+.icon-scales {
+    width: 28px;
+    height: 28px;
+    background-image: url("../assets/icons/scales.svg");
+}
+
+.icon-login {
+    width: 28px;
+    height: 28px;
+    background-image: url("../assets/icons/person-outline.svg");
+}
+
+.icon-magnifier {
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/icons/magnifier.svg");
+}
+
+.icon-grid {
+    width: 27px;
+    height: 27px;
+    background-image: url("../assets/icons/grid.svg");
+}
+
+.icon-xmark {
+    width: 27px;
+    height: 27px;
+    background-image: url("../assets/icons/xmark.svg");
+}
+
+.icon-burger {
+    width: 28px;
+    height: 28px;
+    background-image: url("../assets/icons/menu.svg");
+}

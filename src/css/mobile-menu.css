@@ -1,0 +1,43 @@
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    display: inline-flex;
+}
+
+.menu-main {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    padding: 20px 20px 15px;
+    min-width: 320px;
+    height: 100vh;
+    background-color: #282828;
+    transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
+}
+
+#menu.opened .menu-main {
+    visibility: visible;
+    right: 0;
+    transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
+}
+
+#menu .close-btn {
+    display: flex;
+    margin-left: auto;
+}
+
+.menu-body {
+    padding: 20px 0 15px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 991px) {
+    #menu .menu-btn {
+        padding: 5px 10px;
+    }
+}

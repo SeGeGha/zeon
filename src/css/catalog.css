@@ -1,0 +1,28 @@
+/* CATALOG */
+.catalog-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    width: 170px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background-color: #54C144;
+    border-radius: 5px;
+}
+
+.catalog-btn > .icon-xmark,
+.catalog.opened .catalog-btn > .icon-grid {
+    display: none;
+}
+
+.catalog.opened .catalog-btn {
+    background-color: #ECAC28;
+}
+
+.catalog.opened .catalog-btn .icon-xmark {
+    display: inline;
+}

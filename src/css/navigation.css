@@ -1,0 +1,49 @@
+.navigation {
+    font-size: 14px;
+    line-height: 120%;
+    color: #616960;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.navigation-item {
+    display: inline-flex;
+}
+
+.navigation-item > a {
+    padding: 15px 10px;
+    font-size: inherit;
+    line-height: inherit;
+    transition: background-color 0.2s;
+}
+
+.navigation-item > a:hover {
+    background-color: #F4F4F4;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+    .navigation {
+        padding: 10px 0;
+        width: 100%;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    .navigation-list {
+        flex-direction: column;
+    }
+
+    .navigation-item > a {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navigation-item > a:hover {
+        background-color: #F4F4F4;
+    }
+}

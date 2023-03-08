@@ -47,36 +47,36 @@
                 <div class="contact-info">
                     <div class="contacts">
                         <button class="tel">
-                            <i class="icon icon--velcom"></i>
+                            <i class="icon icon-velcom"></i>
                             +375 (44) 7-300-500
-                            <i class="icon icon--chevron"></i>
+                            <i class="icon icon-chevron"></i>
                         </button>
 
-                        <div class="contacts-dropdown">
+                        <div class="tooltip contacts-dropdown">
                             <span class="tel">
                                 <a href="tel:+375447300500">
-                                    <i class="icon icon--velcom"></i>
+                                    <i class="icon icon-velcom"></i>
                                     +375 (44) 7-300-500
                                 </a>
                             </span>
 
                             <span class="tel">
                                 <a href="tel:+375255300500">
-                                    <i class="icon icon--life"></i>
+                                    <i class="icon icon-life"></i>
                                     +375 (25) 5-300-500
                                 </a>
                             </span>
 
                             <span class="tel">
                                 <a href="tel:+375257300500">
-                                    <i class="icon icon--mts"></i>
+                                    <i class="icon icon-mts"></i>
                                     +375 (25) 7-300-500
                                 </a>
                             </span>
 
                             <span class="tel">
                                 <a href="tel:+375232300500">
-                                    <i class="icon icon--phone"></i>
+                                    <i class="icon icon-phone"></i>
                                     +375 (232) 300-500
                                 </a>
                             </span>
@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="schedule">
-                        <i class="icon icon--clock"></i>
+                        <i class="icon icon-clock"></i>
                         Пн-сб: 10 - 19, Вс: 10 - 17
                     </div>
                 </div>
@@ -102,8 +102,8 @@
                 </div>
                 <div class="catalog hidden-xs hidden-sm">
                     <button class="catalog-btn">
-                        <i class="icon icon--grid"></i>
-                        <i class="icon icon--xmark"></i>
+                        <i class="icon icon-grid"></i>
+                        <i class="icon icon-xmark"></i>
                         Каталог
                     </button>
                     <!-- CATALOG HTML-->
@@ -114,7 +114,7 @@
                             <input name="q" type="text" value="" placeholder="Поиск по сайту" class="search-input" autocomplete="off">
                         </label>
                         <button type="submit">
-                            <i class="icon icon--magnifier"></i>
+                            <i class="icon icon-magnifier"></i>
                         </button>
                     </form>
                     <div class="search-result">
@@ -124,71 +124,70 @@
                 <div class="panel">
                     <div class="contacts hidden-md hidden-lg">
                         <button class="tel">
-                            <i class="icon icon--phone-bold"></i>
+                            <i class="icon icon-phone-bold"></i>
                         </button>
-                        <div class="contacts-dropdown">
+                        <div class="tooltip contacts-dropdown">
                             <span class="tel">
                                 <a href="tel:+375447300500">
-                                    <i class="icon icon--velcom"></i>
+                                    <i class="icon icon-velcom"></i>
                                     +375 (44) 7-300-500
                                 </a>
                             </span>
 
                             <span class="tel">
                                 <a href="tel:+375255300500">
-                                    <i class="icon icon--life"></i>
+                                    <i class="icon icon-life"></i>
                                     +375 (25) 5-300-500
                                 </a>
                             </span>
 
                             <span class="tel">
                                 <a href="tel:+375257300500">
-                                    <i class="icon icon--mts"></i>
+                                    <i class="icon icon-mts"></i>
                                     +375 (25) 7-300-500
                                 </a>
                             </span>
 
                             <span class="tel">
                                 <a href="tel:+375232300500">
-                                    <i class="icon icon--phone"></i>
+                                    <i class="icon icon-phone"></i>
                                     +375 (232) 300-500
                                 </a>
                             </span>
                         </div>
                     </div>
                     <a href="/compare.php?id=" class="panel-compare" target="_blank">
-                        <i class="icon icon--scales">
+                        <i class="icon icon-scales">
                             <span class="counter" data-count="3">3</span>
                         </i>
                         <span class="hidden-xs hidden-sm">Сравнение</span>
                     </a>
                     <a href="/cart.php?id=" class="panel-cart">
-                        <i class="icon icon--basket">
+                        <i class="icon icon-basket">
                             <span class="counter" data-count="2">2</span>
                         </i>
                         <span class="hidden-xs hidden-sm">Корзина</span>
                     </a>
-                    <a href="#dialog_login" class="panel-login hidden-xs hidden-sm">
-                        <i class="icon icon--login"></i>
+                    <a href="#dialog_login" class="panel-auth hidden-xs hidden-sm">
+                        <i class="icon icon-login"></i>
                         <span class="hidden-xs hidden-sm">Войти</span>
                     </a>
                     <div id="menu" class="hidden-md hidden-lg">
                         <button class="menu-btn">
-                            <i class="icon icon--menu"></i>
+                            <i class="icon icon-burger"></i>
                         </button>
                         <div class="menu-main">
                             <button class="close-btn">
-                                <i class="icon icon--xmark"></i>
+                                <i class="icon icon-xmark"></i>
                             </button>
 
                             <div class="menu-body">
-                                <div class="catalog hidden-md hidden-lg">
+                                <div class="catalog">
                                     <button class="catalog-btn">
-                                        <i class="icon icon--grid"></i>
-                                        <i class="icon icon--xmark"></i>
+                                        <i class="icon icon-grid"></i>
+                                        <i class="icon icon-xmark"></i>
                                         Каталог
                                     </button>
-                                    <!-- CATALOG HTML-->
                                 </div>
                                 <nav class="navigation" role="navigation">
                                     <ul class="navigation-list">
@@ -218,6 +217,10 @@
                                         </li>
                                     </ul>
                                 </nav>
+                                <div class="auth">
+                                    <a href="#dialog_login">Войти на сайт</a>
+                                    <a href="#dialog_reg">Зарегистрироваться</a>
+                                </div>
                             </div>
                         </div>
                     </div>

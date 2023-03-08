@@ -1,0 +1,19 @@
+.counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    font-style: normal;
+    background-color: #54C144;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.counter[data-count="0"] {
+    display: none;
+}
