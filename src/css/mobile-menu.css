@@ -33,6 +33,7 @@
 .menu-body {
     padding: 20px 0 15px;
     width: 100%;
+    height: calc(100% - 35px);
     overflow-y: auto;
 }
 
