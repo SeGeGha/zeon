@@ -8,13 +8,21 @@ contactsBtns.forEach(btn => {
     });
 })
 
-const catalogBtn = document.querySelector('.catalog-btn');
+const catalogBtns = document.querySelectorAll('.catalog-btn');
 
-catalogBtn.addEventListener('click', (event) => {
-    const catalogWrap = event.target.closest('.catalog');
+catalogBtns.forEach(btn => {
+    btn.addEventListener('click', (event) => {
+        const catalog    = document.querySelector('#catalog');
+        const header     = document.querySelector('#header');
+        const headerRect = header.getBoundingClientRect();
 
-    catalogWrap.classList.toggle('opened');
-});
+        catalog.style.height = window.innerHeight - headerRect.height + 'px';
+
+        document.body.classList.toggle('locked');
+        event.target.closest('.catalog').classList.toggle('opened');
+        catalog.classList.toggle('opened');
+    });
+})
 
 window.addEventListener('scroll', (event) => {
     document.querySelector('#header').classList.toggle('fixed', !!window.scrollY);
@@ -39,3 +47,7 @@ Array.from(closeBtns).forEach(btn => {
         document.body.classList.remove('locked');
     })
 })
+
+document.body.addEventListener('resize', () => {
+   // close category, menu
+});
