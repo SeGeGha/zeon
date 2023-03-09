@@ -1,16 +1,33 @@
-const contactsBtns = document.querySelectorAll('button.tel');
+// For demo view
 
-contactsBtns.forEach(btn => {
+window.addEventListener('scroll', (event) => {
+    // Add header class "fixed" if scrollY > 0
+    document.querySelector('#header').classList.toggle('fixed', !!window.scrollY);
+});
+
+// Open mobile menu
+document.querySelector('.open-menu').addEventListener('click', (event) => {
+    document.body.classList.add('locked');
+    event.target.closest('#menu').classList.add('opened');
+});
+
+// Close mobile menu
+document.querySelectorAll('.close-menu').forEach(btn => {
     btn.addEventListener('click', (event) => {
-        const contactsWrap = event.target.closest('.contacts');
+        document.body.classList.remove('locked');
+        event.target.closest('.opened').classList.remove('opened');
+    })
+})
 
-        contactsWrap.classList.toggle('opened')
+// Toggle contacts tooltip
+document.querySelectorAll('button.tel').forEach(btn => {
+    btn.addEventListener('click', (event) => {
+        event.target.closest('.contacts').classList.toggle('opened')
     });
 })
 
-const catalogBtns = document.querySelectorAll('.catalog-btn');
-
-catalogBtns.forEach(btn => {
+// Toggle catalog
+document.querySelectorAll('.catalog-btn').forEach(btn => {
     btn.addEventListener('click', (event) => {
         const catalog    = document.querySelector('#catalog');
         const header     = document.querySelector('#header');
@@ -19,35 +36,33 @@ catalogBtns.forEach(btn => {
         catalog.style.height = window.innerHeight - headerRect.height + 'px';
 
         document.body.classList.toggle('locked');
+        // toggle btn wrap class
         event.target.closest('.catalog').classList.toggle('opened');
         catalog.classList.toggle('opened');
     });
-})
-
-window.addEventListener('scroll', (event) => {
-    document.querySelector('#header').classList.toggle('fixed', !!window.scrollY);
 });
 
-const menuBtn = document.querySelector('.menu-btn');
+// Toggle category
+document.querySelector('.menu-list').addEventListener('click', (event) => {
+    const menuItem = event.target.closest('.menu-item');
+    if (!menuItem) return;
 
-menuBtn.addEventListener('click', (event) => {
-   const menuWrap = event.target.closest('#menu');
+    const menuItems = event.currentTarget.querySelectorAll('.menu-item');
+    const contents  = document.querySelectorAll('.category-item');
 
-   document.body.classList.add('locked');
-   menuWrap.classList.toggle('opened');
+    menuItems.forEach((item, id) => {
+        const content      = contents[id];
+        const categoryName = menuItem.dataset.name;
+
+        item.classList.toggle('selected', item.dataset.name ===categoryName);
+        content.classList.toggle('opened', content.dataset.name === categoryName);
+    });
 });
 
-const closeBtns = document.querySelectorAll('.close-btn')
+window.addEventListener('resize', () => {
+    const catalog    = document.querySelector('#catalog');
+    const header     = document.querySelector('#header');
+    const headerRect = header.getBoundingClientRect();
 
-Array.from(closeBtns).forEach(btn => {
-    btn.addEventListener('click', (event) => {
-        const wrap = event.target.closest('.opened');
-
-        wrap.classList.toggle('opened');
-        document.body.classList.remove('locked');
-    })
-})
-
-document.body.addEventListener('resize', () => {
-   // close category, menu
+    catalog.style.height = window.innerHeight - headerRect.height + 'px';
 });
