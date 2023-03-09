@@ -1,11 +1,9 @@
 #catalog {
     display: none;
-    position: fixed;
     width: 100%;
     font-size: 19px;
     color: #2E3038;
     background-color: #F1F3F5;
-    z-index: 10;
 }
 
 #catalog .inner {
@@ -22,15 +20,34 @@
     display: block;
 }
 
-.category-menu {
-    height: 100%;
-    width: 25%;
-    overflow-y: auto;
-    border-right: 1px solid #D0D6DE;
+.category-menu .menu-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.category-menu .menu-header > h4 {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 400;
+    color: #636E72;
+}
+
+.category-menu .menu-header > .close-modal {
+    -webkit-filter: brightness(0) saturate(100%) invert(44%) sepia(8%) saturate(475%) hue-rotate(150deg) brightness(93%) contrast(90%);
+    filter: brightness(0) saturate(100%) invert(44%) sepia(8%) saturate(475%) hue-rotate(150deg) brightness(93%) contrast(90%);
 }
 
 .category-menu .menu-list {
-    padding: 10px 30px 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -39,6 +56,33 @@
     -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    #catalog .mobile-modal {
+        background-color: #FFFFFF;
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #catalog {
+        position: fixed;
+        z-index: 10;
+        color: #2E3038;
+        background-color: #F1F3F5;
+    }
+
+    .category-menu {
+        height: 100%;
+        width: 25%;
+        overflow-y: auto;
+        border-right: 1px solid #D0D6DE;
+    }
+
+    .category-menu .menu-list {
+        padding: 10px 30px 10px 0;
+    }
 }
 
 .category-menu .menu-item {
@@ -77,6 +121,13 @@
 .category-menu .menu-item.selected img {
     -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(103%) contrast(103%);
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(103%) contrast(103%);
+}
+
+.category-menu .menu-item img[alt="caret"] {
+    margin-left: auto;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .category-details {

@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./src/css/index.css">
 </head>
 <body>
@@ -190,8 +189,8 @@
                         <button class="open-menu" type="button">
                             <i class="icon icon-burger"></i>
                         </button>
-                        <div class="menu-main modal">
-                            <button class="close-menu" type="button">
+                        <div class="menu-main mobile-modal">
+                            <button class="close-modal" type="button">
                                 <i class="icon icon-xmark"></i>
                             </button>
 
@@ -208,49 +207,49 @@
                                         <li class="navigation-item">
                                             <a href="/sale">
                                                 <span>Акция %</span>
-                                                <img src="./src/assets/icons/caret.svg" alt="caret">
+                                                <img class="icon-img" src="./src/assets/icons/caret.svg" alt="caret">
                                             </a>
                                         </li>
                                         <li class="navigation-item">
                                             <a href="/news">
                                                 <span>Новости</span>
-                                                <img src="./src/assets/icons/caret.svg" alt="caret">
+                                                <img class="icon-img" src="./src/assets/icons/caret.svg" alt="caret">
                                             </a>
                                         </li>
                                         <li class="navigation-item">
                                             <a href="/installment">
                                                 <span>Рассрочка</span>
-                                                <img src="./src/assets/icons/caret.svg" alt="caret">
+                                                <img class="icon-img" src="./src/assets/icons/caret.svg" alt="caret">
                                             </a>
                                         </li>
                                         <li class="navigation-item">
                                             <a href="/help">
                                                 <span>Как купить</span>
-                                                <img src="./src/assets/icons/caret.svg" alt="caret">
+                                                <img class="icon-img" src="./src/assets/icons/caret.svg" alt="caret">
                                             </a>
                                         </li>
                                         <li class="navigation-item">
                                             <a href="/delivery">
                                                 <span>Доставка</span>
-                                                <img src="./src/assets/icons/caret.svg" alt="caret">
+                                                <img class="icon-img" src="./src/assets/icons/caret.svg" alt="caret">
                                             </a>
                                         </li>
                                         <li class="navigation-item">
                                             <a href="/contacts">
                                                 <span>Контакты</span>
-                                                <img src="./src/assets/icons/caret.svg" alt="caret">
+                                                <img class="icon-img" src="./src/assets/icons/caret.svg" alt="caret">
                                             </a>
                                         </li>
                                         <li class="navigation-item">
                                             <a href="/Club_card">
                                                 <span>Клубная Карта</span>
-                                                <img src="./src/assets/icons/caret.svg" alt="caret">
+                                                <img class="icon-img" src="./src/assets/icons/caret.svg" alt="caret">
                                             </a>
                                         </li>
                                         <li class="navigation-item">
                                             <a href="/service">
                                                 <span>Услуги</span>
-                                                <img src="./src/assets/icons/caret.svg" alt="caret">
+                                                <img class="icon-img" src="./src/assets/icons/caret.svg" alt="caret">
                                             </a>
                                         </li>
                                     </ul>
@@ -272,69 +271,85 @@
             </div>
         </div>
     </header>
-<!--TODO: REFACTOR-->
-    <section id="catalog" class="hidden-xs hidden-sm">
+
+    <section id="catalog">
         <div class="inner">
-            <nav class="category-menu">
+            <nav class="category-menu mobile-modal">
+                <div class="menu-header hidden-md hidden-lg">
+                    <h4>Каталог</h4>
+                    <button class="close-modal hidden-md hidden-lg" type="button">
+                        <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                    </button>
+                </div>
                 <ul class="menu-list">
                     <li class="menu-item selected" data-name="Компьютеры и сети">
                         <button type="button">
-                            <img src="./src/assets/icons/monitor.svg" alt="Компьютеры и сети">
+                            <img class="icon-img" src="./src/assets/icons/monitor.svg" alt="Компьютеры и сети">
                             Компьютеры и сети
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                     <li class="menu-item" data-name="Электроника">
-                        <button type="button"">
-                            <img src="./src/assets/icons/mobile.svg" alt="Электроника">
+                        <button type="button">
+                            <img class="icon-img" src="./src/assets/icons/mobile.svg" alt="Электроника">
                             Электроника
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                     <li class="menu-item" data-name="Бытовая техника">
-                        <button type="button"">
-                            <img src="./src/assets/icons/wash-machine.svg" alt="Бытовая техника">
+                        <button type="button">
+                            <img class="icon-img" src="./src/assets/icons/wash-machine.svg" alt="Бытовая техника">
                             Бытовая техника
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                     <li class="menu-item" data-name="Работа и офис">
-                        <button type="button"">
-                            <img src="./src/assets/icons/office-bag.svg" alt="Работа и офис">
+                        <button type="button">
+                            <img class="icon-img" src="./src/assets/icons/office-bag.svg" alt="Работа и офис">
                             Работа и офис
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                     <li class="menu-item" data-name="Стройка и ремонт">
                         <button type="button">
-                            <img src="./src/assets/icons/paint-roller.svg" alt="Стройка и ремонт">
+                            <img class="icon-img" src="./src/assets/icons/paint-roller.svg" alt="Стройка и ремонт">
                             Стройка и ремонт
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                     <li class="menu-item" data-name="Авто и мото">
                         <button type="button">
-                            <img src="./src/assets/icons/car.svg" alt="Авто и мото">
+                            <img class="icon-img" src="./src/assets/icons/car.svg" alt="Авто и мото">
                             Авто и мото
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                     <li class="menu-item" data-name="Дом и сад">
                         <button type="button">
-                            <img src="./src/assets/icons/house.svg" alt="Дом и сад">
+                            <img class="icon-img" src="./src/assets/icons/house.svg" alt="Дом и сад">
                             Дом и сад
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                     <li class="menu-item" data-name="Красота и спорт">
                         <button type="button">
-                            <img src="./src/assets/icons/barbel.svg" alt="Компьютеры и сети">
+                            <img class="icon-img" src="./src/assets/icons/barbel.svg" alt="Компьютеры и сети">
                             Красота и спорт
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                     <li class="menu-item" data-name="Детям и мамам">
                         <button type="button">
-                            <img src="./src/assets/icons/baby-face.svg" alt="Детям и мамам">
+                            <img class="icon-img" src="./src/assets/icons/baby-face.svg" alt="Детям и мамам">
                             Детям и мамам
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                     <li class="menu-item" data-name="Уценка">
                         <button type="button">
-                            <img src="./src/assets/icons/percentage.svg" alt="Уценка">
+                            <img class="icon-img" src="./src/assets/icons/percentage.svg" alt="Уценка">
                             Уценка
+                            <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
                 </ul>

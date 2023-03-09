@@ -7,17 +7,14 @@
     align-items: center;
 }
 
+#menu .mobile-modal {
+    background-color: #282828;
+}
+
 .open-menu {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-}
-
-#menu .close-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
 }
 
 .menu-body {

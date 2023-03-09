@@ -12,10 +12,13 @@ document.querySelector('.open-menu').addEventListener('click', (event) => {
 });
 
 // Close mobile menu
-document.querySelectorAll('.close-menu').forEach(btn => {
+document.querySelectorAll('.close-modal').forEach(btn => {
     btn.addEventListener('click', (event) => {
-        document.body.classList.remove('locked');
         event.target.closest('.opened').classList.remove('opened');
+
+        if (!document.querySelector('.opened')) document.body.classList.remove('locked');
+
+        // TODO: close catalog
     })
 })
 

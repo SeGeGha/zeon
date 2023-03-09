@@ -1,3 +1,4 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
 @import "icons.css";
 @import "base/counter.css";
 @import "navigation.css";
@@ -231,4 +232,8 @@ ul {
 .menu-body .catalog .icon {
     width: 20px;
     height: 20px;
+}
+
+.icon-img {
+    pointer-events: none;
 }
