@@ -1,0 +1,24 @@
+@media screen and (max-width: 991px) {
+    .modal {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        padding: 20px 20px 15px;
+        min-width: 320px;
+        height: 100vh;
+        background-color: #282828;
+        -webkit-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
+        -o-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
+        transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
+        z-index: 10;
+    }
+
+    .opened .modal {
+        visibility: visible;
+        right: 0;
+        -webkit-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
+        -o-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
+        transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
+    }
+}

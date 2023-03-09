@@ -7,6 +7,7 @@
 @import "catalog.css";
 @import "search.css";
 @import "panel.css";
+@import "base/modal.css";
 @import "mobile-menu.css";
 
 * {
