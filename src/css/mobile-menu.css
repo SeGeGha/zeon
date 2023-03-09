@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.menu-btn {
+.open-menu {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -51,7 +51,7 @@
 }
 
 @media screen and (max-width: 991px) {
-    #menu .menu-btn {
+    #menu .open-menu {
         padding: 5px 10px;
     }
 }
