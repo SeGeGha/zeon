@@ -25,6 +25,7 @@
     -webkit-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
     -o-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
     transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
+    z-index: 10;
 }
 
 #menu.opened .menu-main {
@@ -35,7 +36,7 @@
     transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
 }
 
-#menu .close-btn {
+#menu .close-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
