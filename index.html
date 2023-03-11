@@ -198,7 +198,6 @@
                                 <div class="catalog">
                                     <button class="catalog-btn" type="button">
                                         <i class="icon icon-grid"></i>
-                                        <i class="icon icon-xmark"></i>
                                         Каталог
                                     </button>
                                 </div>
@@ -281,8 +280,9 @@
                         <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
                     </button>
                 </div>
-                <ul class="menu-list">
-                    <li class="menu-item selected" data-name="Компьютеры и сети">
+                <!-- CATALOG NAVIGATION -->
+                <ul class="menu-list nav-list">
+                    <li class="menu-item" data-name="Компьютеры и сети">
                         <button type="button">
                             <img class="icon-img" src="./src/assets/icons/monitor.svg" alt="Компьютеры и сети">
                             Компьютеры и сети
@@ -310,6 +310,7 @@
                             <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
                     </li>
+                    <!--
                     <li class="menu-item" data-name="Стройка и ремонт">
                         <button type="button">
                             <img class="icon-img" src="./src/assets/icons/paint-roller.svg" alt="Стройка и ремонт">
@@ -344,7 +345,7 @@
                             Детям и мамам
                             <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
                         </button>
-                    </li>
+                    </li> -->
                     <li class="menu-item" data-name="Уценка">
                         <button type="button">
                             <img class="icon-img" src="./src/assets/icons/percentage.svg" alt="Уценка">
@@ -354,97 +355,2051 @@
                     </li>
                 </ul>
             </nav>
-            <!--START DESKTOP DETAILS-->
-            <div class="category-details hidden-xs hidden-sm">
-                <div class="category-item opened" data-name="Компьютеры и сети">
-                    <h2 class="category-name">Компьютеры и сети</h2>
-                    <div class="category-content">
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Компьютеры и комплектующие</h3>
+            <div class="category-details">
+                <!-- CATALOG CATEGORY / DYNAMIC RENDER-->
+                <div class="category-item mobile-modal" data-name="Компьютеры и сети">
+                    <!-- DESKTOP TITLE -->
+                    <h2 class="category-name hidden-xs hidden-sm">Компьютеры и сети</h2>
+                    <!-- MOBILE CATEGORY SCREEN -->
+                    <div class="hidden-md hidden-lg">
+                        <!-- MOBILE HEADER (TITLE) -->
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Компьютеры и сети</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
+                        </div>
+                        <!-- MOBILE SUBCATEGORIES NAVIGATION -->
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Компьютеры и комплектующие">
+                                <button type="button">
+                                    Компьютеры и комплектующие
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Ноутбуки и аксессуары">
+                                <button type="button">
+                                    Ноутбуки и аксессуары
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Периферия">
+                                <button type="button">
+                                    Периферия
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Сетевое оборудование">
+                                <button type="button">
+                                    Сетевое оборудование
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Техника для печати и дизайна">
+                                <button type="button">
+                                    Техника для печати и дизайна
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Игры и программное обеспечение">
+                                <button type="button">
+                                    Игры и программное обеспечение
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-details">
+                        <!-- CATALOG SUBCATEGORY -->
+                        <div class="subcategory-item mobile-modal" data-name="Компьютеры и комплектующие">
+                            <!-- DESKTOP TITLE -->
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Компьютеры и комплектующие</h3>
+                            <!-- MOBILE HEADER (TITLE) -->
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Компьютеры и комплектующие</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <!-- LINK NAVIGATION -->
                             <ul class="menu-list">
                                 <li class="menu-item">
-                                    <a href="#">SSD</a>
+                                    <a href="#">
+                                        SSD
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Блоки питания</a>
+                                    <a href="#">
+                                        Блоки питания
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Видеокарты</a>
+                                    <a href="#">
+                                        Видеокарты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Жесткие диски</a>
+                                    <a href="#">
+                                        Жесткие диски
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Звуковые карты</a>
+                                    <a href="#">
+                                        Звуковые карты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Компьютеры</a>
+                                    <a href="#">
+                                        Компьютеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Корпуса</a>
+                                    <a href="#">
+                                        Корпуса
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Материнские платы</a>
+                                    <a href="#">
+                                        Материнские платы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Моноблоки</a>
+                                    <a href="#">
+                                        Моноблоки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Оперативная память</a>
+                                    <a href="#">
+                                        Оперативная память
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Оптические накопители</a>
+                                    <a href="#">
+                                        Оптические накопители
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Процессоры</a>
+                                    <a href="#">
+                                        Процессоры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Системы охлаждения</a>
+                                    <a href="#">
+                                        Системы охлаждения
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Ноутбуки и аксессуары</h3>
+                        <div class="subcategory-item mobile-modal" data-name="Ноутбуки и аксессуары">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Ноутбуки и аксессуары</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Ноутбуки и аксессуары</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
                             <ul class="menu-list">
                                 <li class="menu-item">
-                                    <a href="#">Ноутбуки</a>
+                                    <a href="#">
+                                        Ноутбуки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Подставки для ноутбуков</a>
+                                    <a href="#">
+                                        Подставки для ноутбуков
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Чистящие средства для электроники</a>
+                                    <a href="#">
+                                        Чистящие средства для электроники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Аккумуляторы для ноутбуков</a>
+                                    <a href="#">
+                                        Аккумуляторы для ноутбуков
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Зарядное для ноутбуков</a>
+                                    <a href="#">
+                                        Зарядное для ноутбуков
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Периферия</h3>
+                        <div class="subcategory-item mobile-modal" data-name="Периферия">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Периферия</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Периферия</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
                             <ul class="menu-list">
                                 <li class="menu-item">
-                                    <a href="#">USB Flash</a>
+                                    <a href="#">
+                                        USB Flash
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">USB-хабы</a>
+                                    <a href="#">
+                                        USB-хабы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Web-камеры</a>
+                                    <a href="#">
+                                        Web-камеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Аккумуляторы для ИБП</a>
+                                    <a href="#">
+                                        Аккумуляторы для ИБП
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Боксы для жестких дисков
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Сетевое оборудование">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Сетевое оборудование</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Сетевое оборудование</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        DSL-модемы и маршрутизаторы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары для сетевого оборудования
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Антенны беспроводной связи
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Беспроводные адаптеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Беспроводные маршрутизаторы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Беспроводные точки доступа
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Коммутаторы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сетевые адаптеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сетевые накопители (NAS)
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сети по электропроводке (Powerline)
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кабели для сетевого оборудования
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Техника для печати и дизайна">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Техника для печати и дизайна</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Техника для печати и дизайна</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Графические планшеты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Картриджи для принтеров и МФУ
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Матричные принтеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Офисная бумага
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Принтеры и МФУ
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Расходные материалы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сканеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Термопринтеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Фотобумага
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Расходные материалы и аксессуары для 3D-печати
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        3D-принтеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        3D-ручки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Игры и программное обеспечение">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Игры и программное обеспечение</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Игры и программное обеспечение</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Программное обеспечение
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Оптические диски
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Антивирусы и безопасность
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аккумуляторы для ИБП
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Боксы для жестких дисков
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="category-item" data-name="Электроника">
-                    <h2 class="category-name">Электроника</h2>
-                    <div class="category-content">
+                <div class="category-item mobile-modal" data-name="Электроника">
+                    <h2 class="category-name hidden-xs hidden-sm">Электроника</h2>
+                    <div class="hidden-md hidden-lg">
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Электроника</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Аксессуары для телефонов">
+                                <button type="button">
+                                    Аксессуары для телефонов
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Аудиотехника">
+                                <button type="button">
+                                    Аудиотехника
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Гаджеты">
+                                <button type="button">
+                                    Гаджеты
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Музыкальное оборудование">
+                                <button type="button">
+                                    Музыкальное оборудование
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Планшеты, электронные книги">
+                                <button type="button">
+                                    Планшеты, электронные книги
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Телевидение и видео">
+                                <button type="button">
+                                    Телевидение и видео
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Телефония и связь">
+                                <button type="button">
+                                    Телефония и связь
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Фото- и видеотехника">
+                                <button type="button">
+                                    Фото- и видеотехника
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Игровая зона">
+                                <button type="button">
+                                    Игровая зона
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-details">
+                        <div class="subcategory-item mobile-modal" data-name="Аксессуары для телефонов">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Аксессуары для телефонов</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Аксессуары для телефонов</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Bluetooth-гарнитуры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Автомобильные держатели
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Беспроводные и портативные колонки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Зарядные устройства
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кабели, адаптеры, разветвители
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Портативные зарядные устройства
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Прочие аксессуары
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Чехлы для телефонов
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Прочее для телефонов и планшетов
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Штативы, стабилизаторы и селфи-палки для смартфонов
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Стилусы и сменные наконечники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Аудиотехника">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Аудиотехника</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Аудиотехника</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        AV-ресиверы и усилители
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Hi-Fi акустика
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        MP3-плееры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Виниловые проигрыватели
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Диктофоны
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Звуковые панели и колонки для телевизора
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Микрофоны
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Музыкальные центры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Мультимедиа акустика
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Наушники и гарнитуры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Портативные усилители для наушников
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Радиоприемники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Микшерные пульты и консоли
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары для портативной аудиотехники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        CD-проигрыватели
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Гаджеты">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Гаджеты</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Гаджеты</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Очки виртуальной реальности
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сменные ремешки и браслеты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Умные часы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Фитнес браслеты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Миксеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Мясорубки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Насадки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Соковыжималки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Музыкальное оборудование">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Музыкальное оборудование</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Музыкальное оборудование</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аудиоинтерфейсы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Звукосниматели, тонармы, иглы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Концертная акустика
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Синтезаторы и рабочие станции
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Студийные мониторы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары для акустики и микрофонов
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Гитары
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Музыкальные центры, колонки для вечеринок (Partybox)
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Саундбары и домашние кинотеатры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Гитарные комбоусилители
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Планшеты, электронные книги">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Планшеты, электронные книги</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Планшеты, электронные книги</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Обложки для электронных книг
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Планшеты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Чехлы для планшетов
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Электронные книги
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Телевидение и видео">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Телевидение и видео</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Телевидение и видео</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары для ТВ
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кабели для AV-аппаратуры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кронштейны
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Плееры DVD и Blu-ray
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Портативные DVD-плееры и телевизоры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Приемники цифрового ТВ
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Проекционные экраны
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        ТВ-антенны
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        ТВ-тюнеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Телевизоры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Универсальные пульты ДУ
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Медиаплееры и ТВ-приставки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Проекторы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Телефония и связь">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Телефония и связь</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Телефония и связь</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Мобильные телефоны
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Портативные радиостанции
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Проводные телефоны
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Радиотелефоны DECT
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Смартфоны
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Защитные стекла и пленки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Фото- и видеотехника">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Фото- и видеотехника</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Фото- и видеотехника</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Батарейки, аккумуляторы, зарядные
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Вспышки и лампы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Картридеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Карты памяти
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Объективы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Светофильтры и конвертеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сумки для фото-видеотехники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Фотоаппараты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Цифровые фоторамки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Штативы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Экшен-камеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Фотоальбомы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Дистанционное управление для фототехники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Штативы и стабилизаторы для фото-, видео- и световой техники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары для объективов
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары и крепления для экшен-камер
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Игровая зона">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Игровая зона</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Игровая зона</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Игровая атрибутика
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Игровые контроллеры и аксессуары
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Игры для приставок
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Игровые приставки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-item mobile-modal" data-name="Бытовая техника">
+                    <h2 class="category-name hidden-xs hidden-sm">Бытовая техника</h2>
+                    <div class="hidden-md hidden-lg">
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Бытовая техника</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Встраиваемая техника">
+                                <button type="button">
+                                    Встраиваемая техника
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Климатическая техника">
+                                <button type="button">
+                                    Климатическая техника
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Крупногабаритная техника">
+                                <button type="button">
+                                    Крупногабаритная техника
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Подготовка и обработка продуктов">
+                                <button type="button">
+                                    Подготовка и обработка продуктов
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Приготовление кофе и чая">
+                                <button type="button">
+                                    Приготовление кофе и чая
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Приготовление пищи">
+                                <button type="button">
+                                    Приготовление пищи
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Уборка, уход за одеждой, пошив">
+                                <button type="button">
+                                    Уборка, уход за одеждой, пошив
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Уход за волосами и телом">
+                                <button type="button">
+                                    Уход за волосами и телом
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-details">
+                        <div class="subcategory-item mobile-modal" data-name="Встраиваемая техника">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Встраиваемая техника</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Встраиваемая техника</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Варочные панели
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Вытяжки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Духовые шкафы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Посудомоечные машины
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Вытяжная и приточная вентиляция
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Климатическая техника">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Климатическая техника</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Климатическая техника</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Вентиляторы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кондиционеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Метеостанции
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Обогреватели
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Осушители воздуха
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Очистители и мойки воздуха
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Увлажнители воздуха
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Электрокамины
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Электронные уничтожители насекомых
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Крупногабаритная техника">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Крупногабаритная техника</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Крупногабаритная техника</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Винные шкафы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кухонные плиты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Морозильники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Настольные плиты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Стиральные машины
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Торговые холодильники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Холодильники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары для крупной бытовой и встраиваемой техники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Подготовка и обработка продуктов">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Подготовка и обработка продуктов</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Подготовка и обработка продуктов</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Блендеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Вакуумные упаковщики
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кухонные весы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кухонные комбайны
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Ломтерезки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Миксеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Мясорубки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Насадки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Соковыжималки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сушилки для овощей и фруктов
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Приготовление кофе и чая">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Приготовление кофе и чая</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Приготовление кофе и чая</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Вспениватели молока
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кофеварки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кофемашины
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кофемолки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Термопоты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Заварочные чайники, кофеварки, френч-прессы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Электрочайники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Приготовление пищи">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Приготовление пищи</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Приготовление пищи</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Блинницы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Вафельницы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Йогуртницы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Микроволновые печи
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Мини-печи (ростеры)
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Мультиварки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Пароварки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сэндвичницы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Тостеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Фритюрницы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Хлебопечки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Электрогрили
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Электрошашлычницы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Яйцеварки
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аэрогрили и аэрофритюрницы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары для кухонной техники, прочее
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Уборка, уход за одеждой, пошив">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Уборка, уход за одеждой, пошив</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Уборка, уход за одеждой, пошив</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Гладильные доски
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Машинки для удаления катышков
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Оверлоки и распошивальные машины
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Пароочистители и отпариватели
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Пылесосы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сушилки для белья
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сушка обуви
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Утюги
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Швейные машины
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Электровеники
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары для пылесосов, пароочистителей
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Электрошвабры, паровые швабры и полотеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        ЭРоботы-пылесосы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Уход за волосами и телом">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Уход за волосами и телом</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Уход за волосами и телом</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Женские электробритвы и эпиляторы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Маникюрные и педикюрные наборы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Машинки для стрижки волос
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Напольные весы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Стайлеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сушилки для рук, волос
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Фены
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Электробритвы мужские
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-item mobile-modal" data-name="Работа и офис">
+                    <h2 class="category-name hidden-xs hidden-sm">Работа и офис</h2>
+                    <div class="hidden-md hidden-lg">
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Работа и офис</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Гигиена и питание">
+                                <button type="button">
+                                    Гигиена и питание
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Издательство и печать">
+                                <button type="button">
+                                    Издательство и печать
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Офисная техника">
+                                <button type="button">
+                                    Офисная техника
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Офисная мебель">
+                                <button type="button">
+                                    Офисная мебель
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Торговля и финансы">
+                                <button type="button">
+                                    Торговля и финансы
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-details">
+                        <div class="subcategory-item mobile-modal" data-name="Гигиена и питание">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Гигиена и питание</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Гигиена и питание</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Кулеры для воды
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Издательство и печать">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Издательство и печать</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Издательство и печать</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Брошюровщики
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Ламинаторы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Расходные материалы для ламинаторов и брошюровщиков
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Офисная техника">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Офисная техника</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Офисная техника</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Резаки для бумаги
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Шредеры
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Калькуляторы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Офисная мебель">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Офисная мебель</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Офисная мебель</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сейфы
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subcategory-item mobile-modal" data-name="Торговля и финансы">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Торговля и финансы</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Торговля и финансы</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Детекторы валют
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Информационные панели
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Офисные доски, флипчарты
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Сканеры штрих-кодов
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Счетчики банкнот и монет
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Аксессуары для офисных досок
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="category-item mobile-modal" data-name="Стройка и ремонт">
+                    <h2 class="category-name hidden-xs hidden-sm">Стройка и ремонт</h2>
+                                        <div class="hidden-md hidden-lg">
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Компьютеры и сети</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Компьютеры и комплектующие">
+                                <button type="button">
+                                    Компьютеры и комплектующие
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Ноутбуки и аксессуары">
+                                <button type="button">
+                                    Ноутбуки и аксессуары
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Периферия">
+                                <button type="button">
+                                    Периферия
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-details">
                         <div class="subcategory-details">
                             <h3 class="subcategory-name">Климатическая техника</h3>
                             <ul class="menu-list">
@@ -559,9 +2514,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-item" data-name="Бытовая техника">
-                    <h2 class="category-name">Бытовая техника</h2>
-                    <div class="category-content">
+                <div class="category-item mobile-modal" data-name="Авто и мото">
+                    <h2 class="category-name hidden-xs hidden-sm">Авто и мото</h2>
+                                        <div class="hidden-md hidden-lg">
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Компьютеры и сети</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Компьютеры и комплектующие">
+                                <button type="button">
+                                    Компьютеры и комплектующие
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Ноутбуки и аксессуары">
+                                <button type="button">
+                                    Ноутбуки и аксессуары
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Периферия">
+                                <button type="button">
+                                    Периферия
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-details">
                         <div class="subcategory-details">
                             <h3 class="subcategory-name">Климатическая техника</h3>
                             <ul class="menu-list">
@@ -676,9 +2662,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-item" data-name="Работа и офис">
-                    <h2 class="category-name">Работа и офис</h2>
-                    <div class="category-content">
+                <div class="category-item mobile-modal" data-name="Дом и сад">
+                    <h2 class="category-name hidden-xs hidden-sm">Дом и сад</h2>
+                                        <div class="hidden-md hidden-lg">
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Компьютеры и сети</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Компьютеры и комплектующие">
+                                <button type="button">
+                                    Компьютеры и комплектующие
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Ноутбуки и аксессуары">
+                                <button type="button">
+                                    Ноутбуки и аксессуары
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Периферия">
+                                <button type="button">
+                                    Периферия
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-details">
                         <div class="subcategory-details">
                             <h3 class="subcategory-name">Климатическая техника</h3>
                             <ul class="menu-list">
@@ -793,9 +2810,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-item" data-name="Стройка и ремонт">
-                    <h2 class="category-name">Стройка и ремонт</h2>
-                    <div class="category-content">
+                <div class="category-item mobile-modal" data-name="Красота и спорт">
+                    <h2 class="category-name hidden-xs hidden-sm">Красота и спорт</h2>
+                                        <div class="hidden-md hidden-lg">
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Компьютеры и сети</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Компьютеры и комплектующие">
+                                <button type="button">
+                                    Компьютеры и комплектующие
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Ноутбуки и аксессуары">
+                                <button type="button">
+                                    Ноутбуки и аксессуары
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Периферия">
+                                <button type="button">
+                                    Периферия
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-details">
                         <div class="subcategory-details">
                             <h3 class="subcategory-name">Климатическая техника</h3>
                             <ul class="menu-list">
@@ -910,9 +2958,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-item" data-name="Авто и мото">
-                    <h2 class="category-name">Авто и мото</h2>
-                    <div class="category-content">
+                <div class="category-item mobile-modal" data-name="Детям и мамам">
+                    <h2 class="category-name hidden-xs hidden-sm">Детям и мамам</h2>
+                                        <div class="hidden-md hidden-lg">
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Компьютеры и сети</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Компьютеры и комплектующие">
+                                <button type="button">
+                                    Компьютеры и комплектующие
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Ноутбуки и аксессуары">
+                                <button type="button">
+                                    Ноутбуки и аксессуары
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                            <li class="menu-item" data-name="Периферия">
+                                <button type="button">
+                                    Периферия
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-details">
                         <div class="subcategory-details">
                             <h3 class="subcategory-name">Климатическая техника</h3>
                             <ul class="menu-list">
@@ -1026,477 +3105,58 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="category-item" data-name="Дом и сад">
-                    <h2 class="category-name">Дом и сад</h2>
-                    <div class="category-content">
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Климатическая техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Вентиляторы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кондиционеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Метеостанции</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Обогреватели</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Очистители и мойки воздуха</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Увлажнители воздуха</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Электронные уничтожители насекомых</a>
-                                </li>
-                            </ul>
+                </div> -->
+                <div class="category-item mobile-modal" data-name="Уценка">
+                    <h2 class="category-name hidden-xs hidden-sm">Уценка</h2>
+                    <div class="hidden-md hidden-lg">
+                        <div class="menu-header">
+                            <button class="step-back" type="button">
+                                <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                            </button>
+                            <h4>Уценка</h4>
+                            <button class="close-modal" type="button">
+                                <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                            </button>
                         </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Крупногабаритная техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Кухонные плиты</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Настольные плиты</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Стиральные машины</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Аксессуары для крупной бытовой и встраиваемой техники</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Подготовка и обработка продуктов</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Блендеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Вакуумные упаковщики</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кухонные весы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кухонные комбайны</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Миксеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Мясорубки</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Насадки</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Соковыжималки</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Встраиваемая техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Вытяжки</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Уборка, уход за одежной, пошив</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Гладильные доски</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Машинки для удаления катышек</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Пароочистители и отпариватели</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Пылесосы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Сушилки для белья</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Сушка обуви</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Утюги</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Швейные машины</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Электровеники</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-item" data-name="Распродажа">
+                                <button type="button">
+                                    Распродажа
+                                    <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                </button>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="category-item" data-name="Красота и спорт">
-                    <h2 class="category-name">Красота и спорт</h2>
-                    <div class="category-content">
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Климатическая техника</h3>
+                    <div class="subcategory-details">
+                        <div class="subcategory-item mobile-modal" data-name="Распродажа">
+                            <h3 class="subcategory-name hidden-xs hidden-sm">Распродажа</h3>
+                            <div class="menu-header hidden-md hidden-lg">
+                                <button class="step-back" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/back-arrow.svg" alt="Вернуться">
+                                </button>
+                                <h4>Распродажа</h4>
+                                <button class="close-modal" type="button">
+                                    <img class="icon-img" src="./src/assets/icons/xmark.svg" alt="Закрыть каталог">
+                                </button>
+                            </div>
                             <ul class="menu-list">
                                 <li class="menu-item">
-                                    <a href="#">Вентиляторы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кондиционеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Метеостанции</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Обогреватели</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Очистители и мойки воздуха</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Увлажнители воздуха</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Электронные уничтожители насекомых</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Крупногабаритная техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Кухонные плиты</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Настольные плиты</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Стиральные машины</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Аксессуары для крупной бытовой и встраиваемой техники</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Подготовка и обработка продуктов</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Блендеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Вакуумные упаковщики</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кухонные весы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кухонные комбайны</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Миксеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Мясорубки</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Насадки</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Соковыжималки</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Встраиваемая техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Вытяжки</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Уборка, уход за одежной, пошив</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Гладильные доски</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Машинки для удаления катышек</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Пароочистители и отпариватели</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Пылесосы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Сушилки для белья</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Сушка обуви</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Утюги</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Швейные машины</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Электровеники</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="category-item" data-name="Детям и мамам">
-                    <h2 class="category-name">Детям и мамам</h2>
-                    <div class="category-content">
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Климатическая техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Вентиляторы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кондиционеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Метеостанции</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Обогреватели</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Очистители и мойки воздуха</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Увлажнители воздуха</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Электронные уничтожители насекомых</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Крупногабаритная техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Кухонные плиты</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Настольные плиты</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Стиральные машины</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Аксессуары для крупной бытовой и встраиваемой техники</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Подготовка и обработка продуктов</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Блендеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Вакуумные упаковщики</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кухонные весы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кухонные комбайны</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Миксеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Мясорубки</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Насадки</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Соковыжималки</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Встраиваемая техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Вытяжки</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Уборка, уход за одежной, пошив</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Гладильные доски</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Машинки для удаления катышек</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Пароочистители и отпариватели</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Пылесосы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Сушилки для белья</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Сушка обуви</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Утюги</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Швейные машины</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Электровеники</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="category-item" data-name="Уценка">
-                    <h2 class="category-name">Уценка</h2>
-                    <div class="category-content">
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Климатическая техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Вентиляторы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кондиционеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Метеостанции</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Обогреватели</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Очистители и мойки воздуха</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Увлажнители воздуха</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Электронные уничтожители насекомых</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Крупногабаритная техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Кухонные плиты</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Настольные плиты</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Стиральные машины</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Аксессуары для крупной бытовой и встраиваемой техники</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Подготовка и обработка продуктов</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Блендеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Вакуумные упаковщики</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кухонные весы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Кухонные комбайны</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Миксеры</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Мясорубки</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Насадки</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Соковыжималки</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Встраиваемая техника</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Вытяжки</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subcategory-details">
-                            <h3 class="subcategory-name">Уборка, уход за одежной, пошив</h3>
-                            <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="#">Гладильные доски</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Машинки для удаления катышек</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Пароочистители и отпариватели</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Пылесосы</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Сушилки для белья</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Сушка обуви</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Утюги</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Швейные машины</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#">Электровеники</a>
+                                    <a href="#">
+                                        БУ под заказ
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        Уценённый товар
+                                        <img class="icon-img hidden-md hidden-lg" src="./src/assets/icons/caret.svg" alt="caret">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--END DESKTOP DETAILS-->
         </div>
     </section>
 

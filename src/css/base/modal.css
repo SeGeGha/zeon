@@ -5,6 +5,8 @@
         top: 0;
         right: -100%;
         padding: 20px 20px 15px;
+        max-width: 375px;
+        width: 100%;
         min-width: 320px;
         height: 100vh;
         -webkit-transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s 0.5s;
@@ -21,10 +23,14 @@
         transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), visibility 0s;
     }
 
+    .mobile-modal .step-back,
     .mobile-modal .close-modal {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+    }
+
+    .mobile-modal .close-modal {
         margin-left: auto;
     }
 }

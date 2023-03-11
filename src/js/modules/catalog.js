@@ -1,7 +1,6 @@
 const catalog          = document.querySelector('#catalog')
 const desktopToggleBtn = document.querySelector('#header .catalog .catalog-btn');
 const mobileOpenBtn    = document.querySelector('#menu .catalog .catalog-btn');
-const mobileCloseBtn   = document.querySelector('#catalog .close-modal');
 
 const setCatalogHeight = (reset = false) => {
     const header     = document.querySelector('#header');
@@ -9,42 +8,59 @@ const setCatalogHeight = (reset = false) => {
 
     catalog.style.height = reset ? 'auto' : window.innerHeight - headerRect.height + 'px';
 };
-const toggleCatalog = (toggler, force) => {
-    [
-        desktopToggleBtn,
-        mobileOpenBtn,
-    ].forEach(btn => btn.closest('.catalog').classList.toggle('opened', force)); // toggle btn wrap class
-    catalog.classList.toggle('opened', force); // toggle catalog section class
+const toggleCatalog = () => {
+    desktopToggleBtn.closest('.catalog').classList.toggle('opened'); // toggle btn wrap class
+    catalog.classList.toggle('opened'); // toggle catalog section class
+};
+const preselectCategory = (categoryIdx = 0) => {
+    const menuItems     = catalog.querySelectorAll('.category-menu .menu-item');
+    const categoryItems = catalog.querySelectorAll('.category-details .category-item');
+
+    menuItems.forEach((menuItems, id) => {
+        menuItems.classList.toggle('selected', id === categoryIdx);
+        categoryItems[id].classList.toggle('opened', id === categoryIdx);
+    });
 };
 
-desktopToggleBtn.addEventListener('click', (event) => {
+desktopToggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('locked');
 
     setCatalogHeight();
-    toggleCatalog(event.currentTarget);
+    preselectCategory();
+    toggleCatalog();
 });
 
-mobileOpenBtn.addEventListener('click', (event) => toggleCatalog(true));
-mobileCloseBtn.addEventListener('click', () => toggleCatalog(false));
+mobileOpenBtn.addEventListener('click', () => {
+    preselectCategory(-1);
+    toggleCatalog();
+});
 
 window.addEventListener('resize', () => {
     setCatalogHeight(window.innerWidth < 992);
 });
 
-// Toggle category
-document.querySelector('.menu-list').addEventListener('click', (event) => {
+document.querySelector('#catalog').addEventListener('click', (event) => {
+    // Step back
+    if (event.target.classList.contains('step-back')) {
+        event.target.closest('.opened').classList.remove('opened');
+        return;
+    }
+    // Close modal handler
+    if (event.target.classList.contains('close-modal')) {
+        event.target.closest('.opened').classList.remove('opened');
+        return;
+    }
+
     const menuItem = event.target.closest('.menu-item');
     if (!menuItem) return;
 
-    const menuItems = event.currentTarget.querySelectorAll('.menu-item');
-    const contents  = document.querySelectorAll('.category-item');
+    const menuList     = menuItem.closest('.menu-list');
+    const details      = menuList.classList.contains('nav-list') ? catalog.querySelector('.category-details') : menuList.closest('.opened');
+    const contents     = details.querySelectorAll(menuList.classList.contains('nav-list') ? '.category-item' : '.subcategory-item');
+    const categoryName = menuItem.dataset.name;
 
-    menuItems.forEach((item, id) => {
-        const content      = contents[id];
-        const categoryName = menuItem.dataset.name;
-
-        item.classList.toggle('selected', item.dataset.name ===categoryName);
-        content.classList.toggle('opened', content.dataset.name === categoryName);
+    menuList.querySelectorAll('.menu-item').forEach((item, id) => {
+        item.classList.toggle('selected', item.dataset.name === categoryName);
+        contents[id].classList.toggle('opened', contents[id].dataset.name === categoryName);
     });
 });
-
