@@ -259,4 +259,13 @@
     .category-details .menu-item {
         color: #636E72;
     }
+
+    #catalog ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #catalog ::-webkit-scrollbar-thumb {
+        background-color: #D0D6DE;
+        border-radius: 10px;
+    }
 }
