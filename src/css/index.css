@@ -143,6 +143,11 @@ ul {
         padding: 0 5px;
     }
 
+    #header .inner::before,
+    #header .inner::after {
+        content: none;
+    }
+
     .header-middle {
         padding: 10px 0;
     }
