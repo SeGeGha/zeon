@@ -47,7 +47,8 @@ document.querySelector('#catalog').addEventListener('click', (event) => {
     }
     // Close modal handler
     if (event.target.classList.contains('close-modal')) {
-        event.target.closest('.opened').classList.remove('opened');
+        catalog.querySelectorAll('.opened').forEach(el => el.classList.remove('opened'));
+        toggleCatalog();
         return;
     }
 
@@ -58,6 +59,7 @@ document.querySelector('#catalog').addEventListener('click', (event) => {
     const details      = menuList.classList.contains('nav-list') ? catalog.querySelector('.category-details') : menuList.closest('.opened');
     const contents     = details.querySelectorAll(menuList.classList.contains('nav-list') ? '.category-item' : '.subcategory-item');
     const categoryName = menuItem.dataset.name;
+    if (!categoryName) return;
 
     menuList.querySelectorAll('.menu-item').forEach((item, id) => {
         item.classList.toggle('selected', item.dataset.name === categoryName);
