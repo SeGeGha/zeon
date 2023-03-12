@@ -72,13 +72,13 @@
     background-image: url("../assets/icons/scales.svg");
 }
 
-.icon-sign-in {
+.icon-person {
     width: 28px;
     height: 28px;
     background-image: url("../assets/icons/person-outline.svg");
 }
 
-.icon-sign-in--bold {
+.icon-person--bold {
     width: 28px;
     height: 28px;
     background-image: url("../assets/icons/person.svg");
