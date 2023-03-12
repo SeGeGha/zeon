@@ -136,6 +136,30 @@
     padding: 10px 0;
 }
 
+.brands {
+    padding: 0 20px;
+    position: relative;
+    left: -20px;
+    width: calc(100% + 40px);
+    overflow-x: auto;
+}
+
+.brands-list {
+    padding: 20px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    width: max-content;
+}
+
+.brands .brands-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(208, 214, 222, 0.2);
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 991px) {
     #catalog .mobile-modal {
         background-color: #FFFFFF;
@@ -189,6 +213,11 @@
     #catalog ::-webkit-scrollbar {
         width: 0!important;
         height: 0!important;
+    }
+
+    .brands .brands-item {
+        width: 100px;
+        height: 55px;
     }
 }
 
