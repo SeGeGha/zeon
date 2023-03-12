@@ -37,25 +37,6 @@ button.tel > .icon-caret--bold {
     transform: rotate(180deg);
 }
 
-.contacts-dropdown a {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-column-gap: 11px;
-    -moz-column-gap: 11px;
-    column-gap: 11px;
-    width: 100%;
-    padding: 10px;
-}
-
-.tel + .tel > a {
-    padding-top: 5px;
-}
-
-.contacts-dropdown .tel:hover {
-    background-color: #F4F4F4;
-}
-
 @media screen and (max-width: 991px) {
     .contacts > button.tel {
         padding: 5px 10px;

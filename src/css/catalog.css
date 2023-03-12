@@ -200,6 +200,10 @@
         background-color: #F1F3F5;
     }
 
+    #catalog .category-menu {
+        border: none;
+    }
+
     .category-menu {
         height: 100%;
         width: 25%;

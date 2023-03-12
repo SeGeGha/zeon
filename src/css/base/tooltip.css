@@ -20,3 +20,22 @@
     display: -ms-flexbox;
     display: flex;
 }
+
+.tooltip a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-column-gap: 11px;
+    -moz-column-gap: 11px;
+    column-gap: 11px;
+    width: 100%;
+    padding: 10px;
+}
+
+.tooltip span + span > a {
+    padding-top: 5px;
+}
+
+.tooltip span:hover {
+    background-color: #F4F4F4;
+}
