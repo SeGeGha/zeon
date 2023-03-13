@@ -1,0 +1,43 @@
+.panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-width: 20%;
+}
+
+.panel-auth {
+    position: relative;
+}
+
+.panel-auth .tooltip {
+    top: 100%;
+}
+
+.panel > a,
+.panel-auth > button {
+    padding: 0 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #323232;
+}
+
+@media screen and (max-width: 991px) {
+    .panel > a,
+    .panel-auth > button {
+        padding: 5px 10px;
+    }
+}

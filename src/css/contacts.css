@@ -1,0 +1,44 @@
+@import "base/tooltip.css";
+
+.contacts {
+    position: relative;
+}
+
+.contacts > button.tel {
+    position: relative;
+    padding: 15px 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+button.tel > .icon-caret--bold {
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 0;
+}
+
+.contacts.opened .icon-chevron,
+.contacts.opened .icon-caret,
+.contacts.opened .icon-caret--bold {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 991px) {
+    .contacts > button.tel {
+        padding: 5px 10px;
+    }
+}

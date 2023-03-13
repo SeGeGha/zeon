@@ -1,0 +1,90 @@
+.navigation {
+    font-size: 14px;
+    line-height: 120%;
+    color: #616960;
+}
+
+.navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navigation-item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.navigation-item > a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px 10px;
+    font-size: inherit;
+    line-height: inherit;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.navigation-item > a > img {
+    -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(103%) contrast(103%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(103%) contrast(103%);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.navigation-item > a[href="/sale"] {
+    color: #fff;
+}
+
+.navigation-item > a[href="/sale"] span {
+    padding: 5px 10px;
+    background-color: #FF0000;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.navigation-item > a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+    .navigation {
+        padding: 10px 0;
+        width: 100%;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    .navigation-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .navigation-item > a {
+        width: 100%;
+    }
+
+    .navigation-item > a[href="/sale"] span {
+        position: relative;
+        left: -10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navigation-item > a:not([href="/sale"]):hover {
+        background-color: #F4F4F4;
+    }
+}

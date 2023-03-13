@@ -1,0 +1,36 @@
+#menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#menu .mobile-modal {
+    background-color: #282828;
+}
+
+.open-menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.menu-body {
+    padding: 20px 0 15px;
+    width: 100%;
+    height: calc(100vh - 62px);
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 991px) {
+    #menu .open-menu {
+        padding: 5px 10px;
+    }
+
+    #menu ::-webkit-scrollbar {
+        width: 0!important;
+        height: 0!important;
+    }
+}
