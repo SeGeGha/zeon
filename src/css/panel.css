@@ -11,7 +11,16 @@
     min-width: 20%;
 }
 
-.panel > a {
+.panel-auth {
+    position: relative;
+}
+
+.panel-auth .tooltip {
+    top: 100%;
+}
+
+.panel > a,
+.panel-auth > button {
     padding: 0 10px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -27,7 +36,8 @@
 }
 
 @media screen and (max-width: 991px) {
-    .panel > a {
+    .panel > a,
+    .panel-auth > button {
         padding: 5px 10px;
     }
 }
